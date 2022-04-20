@@ -191,6 +191,18 @@ img {
   max-width: 270px;
 }
 
+.about-logo {
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.about-icons {
+  width: 70px;
+  height: 70px;
+}
+
 /* ------------------WORK-------------------- */
 
 .work {
@@ -265,19 +277,39 @@ img {
   
 /* ------------------CLIENTS------------------- */
 
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .clients {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-text-tittle);
+  margin-bottom: 50px;
 }
 
 .clients-logo {
   display: flex;
+  margin: 0 auto;
 }
 
+.clients-item {
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px 32px;
+ }
+
+.clients-item:hover {
+  border: 1px solid #2196F3;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
 
 .logo-company {
  width: 106px;
@@ -287,9 +319,7 @@ img {
 
 .logo-company:hover {
   fill: var(--accent-color);
-  color: var(--accent-color);
-  
-}
+  }
 
 /* -----------------FOOTER------------------------ */
 

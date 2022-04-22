@@ -269,6 +269,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  
 }
 
 .team-name {
@@ -290,6 +291,7 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #FFFFFF;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-soc {
@@ -314,7 +316,8 @@ img {
   fill: currentColor;
  } 
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
   background-color: var(--accent-color);
   color: #FFFFFF;
   }
@@ -347,27 +350,36 @@ img {
 }
 
 .clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px; 
+  height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 16px 32px;
+  color: #afb1b8;;
+
 }
 
 .clients-item:hover {
   border: 1px solid #2196f3;
+  color: var(--accent-color);
 }
 
-.clients-item + .clients-item {
+.clients-list + .clients-list {
   margin-left: 30px;
 }
 
 .logo-company {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
-.logo-company:hover {
+.logo-company:hover,
+.logo-company:focus {
   fill: var(--accent-color);
 }
 
@@ -386,6 +398,17 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.footer-main>div {
+  display: flex;
+  align-items: baseline;
+}
+
+.adress-go {
+  margin-right: 70px;
+}
+
+
 .logo-accent-footer {
   color: var(--base-color);
 }
@@ -418,6 +441,44 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.footer-go {
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+
+.footer-link-soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.footer-svg {
+  fill: currentColor;
+}
+
+.footer-link-soc:hover,
+.footer-link-soc:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-item + .footer-item {
+  padding-left: 10px;
+}
+
+.footer-list {
+  display: flex;
+  margin-top: 20px;
 }
 
 /* ---------------------PORTFOLIO---------------------- */

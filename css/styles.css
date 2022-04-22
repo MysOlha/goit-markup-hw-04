@@ -307,21 +307,23 @@ img {
   height: 44px;
   background-color: #FFFFFF;
   border-radius: 50%;
-}
+  color: #AFB1B8;
+  }
+  
+  .team-svg {
+  fill: currentColor;
+ } 
 
 .team-soc-link:hover {
   background-color: var(--accent-color);
+  color: #FFFFFF;
   }
 
 .team-soc-item + .team-soc-item {
   margin-left: 10px;
 }
 
-.team-svg {
-  fill: #AFB1B8;
-}
-.team-svg:hover {
-fill: currentColor;}
+
 
 /* ------------------CLIENTS------------------- */
 

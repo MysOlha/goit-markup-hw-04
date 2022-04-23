@@ -5,64 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link rel="stylesheet" href="./css/styles.css">
-     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-   <!--header-->
-   <header>
-    <div class="container header-div">
-      <a href="./index.html" class="logo"
-        >Web<span class="logo-accent">Studio</span>
-      </a>
-      <nav class="header-nav">
-        <ul class="site-nav list">
+    <!--header-->
+    <header class="border">
+      <div class="container header-div">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-accent">Studio</span>
+        </a>
+        <nav class="header-nav">
+          <ul class="site-nav list">
+            <li class="site-nav-item">
+              <a href="./index.html" class="link-nav">Студия</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="./portfolio.html" class="link-nav current">Портфолио</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="/" class="link-nav">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="site-nav list adress-nav">
           <li class="site-nav-item">
-            <a href="./index.html" class="link-nav ">Студия</a>
+            <a href="mailto:info@devstudio.com" class="link-nav">
+              <svg class="svg-nav" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="site-nav-item">
-            <a href="./portfolio.html" class="link-nav current">Портфолио</a>
-          </li>
-          <li class="site-nav-item">
-            <a href="/" class="link-nav">Контакты</a>
+            <a href="tel:+380961111111" class="link-nav">
+              <svg class="svg-nav" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
+      </div>
+    </header>
 
-      <ul class="site-nav list adress-nav">
-        <li class="site-nav-item">
-          <a href="mailto:info@devstudio.com" class="link-nav">
-            <svg class="svg-nav" width="16" height="12">
-              <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a>
-        </li>
-        <li class="site-nav-item">
-          <a href="tel:+380961111111" class="link-nav">
-            <svg class="svg-nav" width="10" height="16">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-    
-    
     <!--main-->
     <main>
       <section class="portfolio">
         <h1 class="visually-hidden">Портфолио</h1>
         <div class="container filter">
           <ul class="list filter-list">
-            <li class="button-list"><button type="button" class="button-filter">Все</button></li>
-            <li class="button-list"><button type="button" class="button-filter">Веб-сайты</button></li>
-            <li class="button-list"><button type="button" class="button-filter">Приложения</button></li>
-            <li class="button-list"><button type="button" class="button-filter">Дизайн</button></li>
-            <li class="button-list"><button type="button" class="button-filter">Маркетинг</button></li>
+            <li class="button-list">
+              <button type="button" class="button-filter">Все</button>
+            </li>
+            <li class="button-list">
+              <button type="button" class="button-filter">Веб-сайты</button>
+            </li>
+            <li class="button-list">
+              <button type="button" class="button-filter">Приложения</button>
+            </li>
+            <li class="button-list">
+              <button type="button" class="button-filter">Дизайн</button>
+            </li>
+            <li class="button-list">
+              <button type="button" class="button-filter">Маркетинг</button>
+            </li>
           </ul>
         </div>
-        
+
         <div class="container">
           <ul class="portfolio-list list">
             <li class="portfolio-item">
@@ -75,12 +89,18 @@
             <li class="portfolio-item">
               <img src="./images/poster.jpg" alt="Постер" width="370" />
               <div class="list-name">
-                <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+                <h2 class="portfolio-title">
+                  Постер New Orlean vs Golden Star
+                </h2>
                 <p class="portfolio-name">Дизайн</p>
               </div>
             </li>
             <li class="portfolio-item">
-              <img src="./images/seafood.jpg" alt="Логотип ресторана" width="370" />
+              <img
+                src="./images/seafood.jpg"
+                alt="Логотип ресторана"
+                width="370"
+              />
               <div class="list-name">
                 <h2 class="portfolio-title">Ресторан Seafood</h2>
                 <p class="portfolio-name">Приложение</p>
@@ -100,7 +120,7 @@
                 <p class="portfolio-name">Приложение</p>
               </div>
             </li>
-           <li class="portfolio-item">
+            <li class="portfolio-item">
               <img src="./images/monitor.jpg" alt="Монітор" width="370" />
               <div class="list-name">
                 <h2 class="portfolio-title">Inspiration has no Borders</h2>
@@ -116,12 +136,12 @@
             </li>
             <li class="portfolio-item">
               <img src="./images/lab.jpg" alt="Проект ЛАБ" width="370" />
-             <div class="list-name"> 
+              <div class="list-name">
                 <h2 class="portfolio-title">Проект LAB</h2>
                 <p class="portfolio-name">Маркетинг</p>
-              </div>  
+              </div>
             </li>
-            <li class="portfolio-item">  
+            <li class="portfolio-item">
               <img src="./images/business.jpg" alt="Ноутбук" width="370" />
               <div class="list-name">
                 <h2 class="portfolio-title">Growing Business</h2>
@@ -132,8 +152,7 @@
         </div>
       </section>
     </main>
-    
-    
+
     <!--footer-->
     <footer class="footer footer-main">
       <div class="container">
@@ -144,8 +163,11 @@
           <address>
             <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
             <a href="mailto:info@example.com" class="footer-link"
-              >info@example.com</a>
-            <a href="tel:+380991111111" class="footer-link"> +38 099 111 11 11</a>
+              >info@example.com</a
+            >
+            <a href="tel:+380991111111" class="footer-link">
+              +38 099 111 11 11</a
+            >
           </address>
         </div>
         <div class="links-go">
@@ -154,28 +176,36 @@
             <li class="footer-item">
               <a href="" class="footer-link-soc">
                 <svg class="footer-svg" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram-footer"></use> 
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram-footer"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="footer-item">
               <a href="" class="footer-link-soc">
                 <svg class="footer-svg" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter-footer"></use> 
+                  <use
+                    href="./images/symbol-defs.svg#icon-twitter-footer"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="footer-item">
               <a href="" class="footer-link-soc">
                 <svg class="footer-svg" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook-footer"></use> 
+                  <use
+                    href="./images/symbol-defs.svg#icon-facebook-footer"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="footer-item">
               <a href="" class="footer-link-soc">
                 <svg class="footer-svg" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin-footer"></use> 
+                  <use
+                    href="./images/symbol-defs.svg#icon-linkedin-footer"
+                  ></use>
                 </svg>
               </a>
             </li>
